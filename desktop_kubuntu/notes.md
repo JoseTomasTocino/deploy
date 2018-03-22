@@ -43,3 +43,14 @@ After fixing the aforementioned problems, a new one appeared. Right after choosi
     sudo update-grub
     sudo reboot
     
+# Minor settings    
+
+## Playback at headphones and speakers at the same time
+
+Disable `auto-mute` on alsamixer:
+
+    alsamixer -c 1
+
+Then store the settings:
+
+    sudo alsactl store
